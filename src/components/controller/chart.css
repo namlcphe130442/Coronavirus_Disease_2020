@@ -1,0 +1,11 @@
+.tabs2 {
+  display: none;
+}
+@media (max-width: 680px) {
+  .tabs{
+    display: none;
+  }
+  .tabs2 {
+    display: block;
+  }
+}

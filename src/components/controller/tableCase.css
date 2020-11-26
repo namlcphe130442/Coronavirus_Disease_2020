@@ -1,0 +1,26 @@
+.number-card-container{
+  background: #CCE5E9;
+  padding: 0 10px 5px 0
+}
+
+.number-card-three-tier{
+  background: #FFFFFF; 
+  padding: 8px 0;
+  text-align: center;
+  font-size: 15px;
+  margin: 10px 0 0 10px
+}
+
+.number-card-container > span{
+  color: #AEA9A9
+}
+
+.number-card-container > span{
+  display: block;
+  text-align: right;
+  color: black;
+}
+
+.number-card-three-tier > h2{
+  color: #007c91
+}
