@@ -95,11 +95,11 @@ const Chart = ({ slug, t }) => {
         defaultActiveKey="1"
         size={"large"}
         centered
-        style={{ margin: "50px auto 0 auto", maxWidth: "500px", height: "50%" }}
+        style={{ margin: "50px auto 0 auto", maxWidth: "600px", height: "50%" }}
       >
         <TabPane
           tab={
-            <p style={{ fontSize: "70%", color: "#CC0000" }}>{t('NUMBER OF CASES')}</p>
+            <p style={{ fontSize: "90%", color: "#CC0000" }}>{t('NUMBER OF CASES')}</p>
           }
           key="1"
         >
@@ -107,7 +107,7 @@ const Chart = ({ slug, t }) => {
         </TabPane>
         <TabPane
           tab={
-            <p style={{ fontSize: "70%", color: "#333300" }}>
+            <p style={{ fontSize: "90%", color: "#333300" }}>
               {t('NUMBER OF DEATHS')}
             </p>
           }
@@ -117,7 +117,7 @@ const Chart = ({ slug, t }) => {
         </TabPane>
         <TabPane
           tab={
-            <p style={{ fontSize: "70%", color: "#00CC33" }}>
+            <p style={{ fontSize: "90%", color: "#00CC33" }}>
               {t('NUMBER OF RECOVERY CASES')}
             </p>
           }
