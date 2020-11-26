@@ -32,12 +32,12 @@ const Content = ({t}) => {
   }
 
   return (
-    <Content className="site-layout" style={{ marginTop: 64, marginBottom:'100px'}}>
+    <Content className="site-layout" style={{ margin:'64px 0 100px 0'}}>
       {(!dataSummary || ! countries)
         ? <div style={{display:'flex', alignItems:'center', justifyContent:'center' }}>
             <img src={loader} alt="loading" />
           </div>
-        : <div className="site-layout-background" style={{ padding: '24px', minHeight: '480' }}>
+        : <div className="site-layout-background" style={{ padding: '15px', minHeight: '480' }}>
             <h1>{t('Global COVID-19 Cases, Deaths and Recovered')}</h1>
             <TableCase dataGlobal={dataSummary.Global} dateUpdated={dataSummary.Date}/>
             <div style={{ display: 'flex', alignItems:'center',  marginTop: '30px', marginBottom: '10px' }}>

@@ -24,7 +24,8 @@ const Header = ({ t }) => {
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        lineHeight: '1.571'
+        lineHeight: '1.571',
+        padding: '0 15px'
       }}
     >
       {/* <div className="logo" /> */}
