@@ -95,7 +95,7 @@ const Chart = ({ slug, t }) => {
         defaultActiveKey="1"
         size={"large"}
         centered
-        style={{ marginTop: "50px", maxWidth: "500px", height: "50%" }}
+        style={{ margin: "50px auto 0 auto", maxWidth: "500px", height: "50%" }}
       >
         <TabPane
           tab={

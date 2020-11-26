@@ -28,7 +28,7 @@ const Header = ({ t }) => {
       }}
     >
       {/* <div className="logo" /> */}
-      <div>
+      <div style={{ marginRight: '15px'}}>
         <span
           style={{
             fontFamily: "Open Sans,sans-serif",
