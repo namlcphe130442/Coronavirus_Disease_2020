@@ -46,9 +46,9 @@ const Header = ({ t }) => {
         className="ant-select-selection"
         onChange={(value) => changeLanguage(value)}
       >
-        <Option value="en">{t("English")}</Option>
-        <Option value="vn">{t("Vietnamese")}</Option>
-        <Option value="jp">{t("Japanese")}</Option>
+        <Option value="en">English</Option>
+        <Option value="vn">Tiếng Việt</Option>
+        <Option value="jp">日本語</Option>
       </Select>
     </Header>
   );
