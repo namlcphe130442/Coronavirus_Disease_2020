@@ -4,6 +4,7 @@ import TableCase from '../controller/tableCase';
 import loader from '../../image/loader.gif'
 import Chart from '../controller/chart';
 import { withNamespaces } from 'react-i18next';
+import GeoChart from '../controller/geoChart';
 
 const Content = ({t}) => {
   const { Content } = Layout;
@@ -58,6 +59,7 @@ const Content = ({t}) => {
                 </>
               : <p style={{textAlign: 'center', fontSize: '20px', color:' #007c91'}}>No data</p>
             }
+            <GeoChart dataSummary={dataSummary}/>
           </div>
       }
     </Content>
