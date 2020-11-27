@@ -41,6 +41,7 @@ const Content = ({t}) => {
         : <div className="site-layout-background" style={{ padding: '15px', minHeight: '480' }}>
             <h1>{t('Global COVID-19 Cases, Deaths and Recovered')}</h1>
             <TableCase dataGlobal={dataSummary.Global} dateUpdated={dataSummary.Date}/>
+            <GeoChart dataSummary={dataSummary}/>
             <div style={{ display: 'flex', alignItems:'center',  marginTop: '30px', marginBottom: '10px' }}>
               <Select showSearch defaultValue="vietnam" onChange={onChange} style={{ width: 250, marginRight:'20px' }} placeholder="Select a country" optionFilterProp="children">
                 { countries.map(country => <Option key={country.Slug} value={country.Slug}>{country.Country}</Option>) }
@@ -59,7 +60,6 @@ const Content = ({t}) => {
                 </>
               : <p style={{textAlign: 'center', fontSize: '20px', color:' #007c91'}}>No data</p>
             }
-            <GeoChart dataSummary={dataSummary}/>
           </div>
       }
     </Content>
