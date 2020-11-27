@@ -33,7 +33,7 @@ const Content = ({t}) => {
   }
 
   return (
-    <Content className="site-layout" style={{ margin:'64px 0 100px 0'}}>
+    <Content className="site-layout" style={{ margin:'64px 0 100px 0' }}>
       {(!dataSummary || ! countries)
         ? <div style={{display:'flex', alignItems:'center', justifyContent:'center' }}>
             <img src={loader} alt="loading" />

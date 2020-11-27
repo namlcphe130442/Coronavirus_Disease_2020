@@ -1,22 +1,18 @@
 import React from 'react';
 import { Chart } from "react-google-charts";
 import './geoChart.css'
+import { withNamespaces } from 'react-i18next';
 
-function GeoChart({ dataSummary }) {
+const GeoChart = ({ dataSummary, t }) => {
   const load = () => {
     if (dataSummary !== null) {
-      const arrayData = [["CountryCode", "Country", "TotalConfirmed",
-        "TotalDeaths"]];
+      const arrayData = [["CountryCode", "Country", t('TotalConfirmed'), t('TotalDeaths')]];
       dataSummary.Countries.forEach(element => {
         const dataElement = [];
         dataElement.push(element.CountryCode);
         dataElement.push(element.Country);
         dataElement.push(element.TotalConfirmed);
-        // dataElement.push(element.NewConfirmed);
         dataElement.push(element.TotalDeaths);
-        // dataElement.push(element.NewDeaths);
-        // dataElement.push(element.TotalRecovered);
-        // dataElement.push(element.NewRecovered);
         arrayData.push(dataElement)
       });
       return arrayData;
@@ -28,7 +24,6 @@ function GeoChart({ dataSummary }) {
     backgroundColor: '#F0F2F5',
     datalessRegionColor: '#FFFFFF',
     defaultColor: '#f5f5f5',
-    border:'1px'
   };
 
   const data = load();
@@ -58,4 +53,4 @@ function GeoChart({ dataSummary }) {
   );
 }
 
-export default GeoChart;
+export default withNamespaces()(GeoChart);

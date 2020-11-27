@@ -11,5 +11,7 @@
   "Updated": "Cập nhật",
   "NUMBER OF CASES": "SỐ CA NHIỄM",
   "NUMBER OF DEATHS": "SỐ CA TỬ VONG",
-  "NUMBER OF RECOVERY CASES": "SỐ CA PHỤC HỒI"
+  "NUMBER OF RECOVERY CASES": "SỐ CA PHỤC HỒI",
+  "TotalConfirmed": "Nhiễm bệnh",
+  "TotalDeaths": "Phục hồi"
 }

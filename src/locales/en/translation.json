@@ -11,5 +11,7 @@
   "Updated": "Updated",
   "NUMBER OF CASES": "NUMBER OF CASES",
   "NUMBER OF DEATHS": "NUMBER OF DEATHS",
-  "NUMBER OF RECOVERY CASES": "NUMBER OF RECOVERY CASES"
+  "NUMBER OF RECOVERY CASES": "NUMBER OF RECOVERY CASES",
+  "TotalConfirmed": "TotalConfirmed",
+  "TotalDeaths": "TotalDeaths"
 }
