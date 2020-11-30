@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Chart } from "react-google-charts";
 import './geoChart.css'
 import { withNamespaces } from 'react-i18next';
 
 const GeoChart = ({ dataSummary, t }) => {
+  const [regionChoice, setRegionChoice] = useState(null);
   const load = () => {
     if (dataSummary !== null) {
       const arrayData = [["CountryCode", "Country", t('TotalConfirmed'), t('TotalDeaths')]];
@@ -19,8 +20,9 @@ const GeoChart = ({ dataSummary, t }) => {
     }
   }
 
-  var options = {
-    colorAxis: { colors: ["#F7F7F7", '#C5C573', '#FF7907', '#F70202'] },
+  let options = {
+    region: regionChoice,
+    colorAxis: { minValue: 0, colors: ["#F7F7F7", '#C5C573', '#FF7907', '#F70202'] },
     backgroundColor: '#F0F2F5',
     datalessRegionColor: '#FFFFFF',
     defaultColor: '#f5f5f5',
@@ -37,14 +39,19 @@ const GeoChart = ({ dataSummary, t }) => {
             callback: ({ chartWrapper }) => {
               const chart = chartWrapper.getChart();
               const selection = chart.getSelection();
-              if (selection.length === 0) return;
-              const region = data[selection[0].row + 1];
-              console.log("Selected : " + region);
+              if (selection.length !== 0) {
+                const region = data[selection[0].row + 1];
+                if (regionChoice === region[0]) {
+                  setRegionChoice(null);
+                  return;
+                }
+                setRegionChoice(region[0]);
+              }
             }
           }
         ]}
         chartType="GeoChart"
-        width= "100%"
+        width="100%"
         height="100%"
         data={data}
         options={options}
