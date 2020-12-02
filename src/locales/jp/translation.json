@@ -13,5 +13,6 @@
   "NUMBER OF DEATHS": "死亡者数",
   "NUMBER OF RECOVERY CASES": "回復者数",
   "TotalConfirmed": "感染者の合計数",
-  "TotalDeaths": "新しい死亡者数"
+  "TotalDeaths": "新しい死亡者数",
+  "Data not found": "何もデータが見つかりませんでした"
 }

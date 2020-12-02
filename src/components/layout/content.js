@@ -58,7 +58,7 @@ const Content = ({t}) => {
                   <TableCase dataGlobal={dataVietNam} dateUpdated={dataVietNam.Date}/>
                   <Chart slug={dataVietNam.Slug}/>
                 </>
-              : <p style={{textAlign: 'center', fontSize: '20px', color:' #007c91'}}>No data</p>
+              : <p style={{textAlign: 'center', fontSize: '20px', color:' #007c91'}}>{t('Data not found')}</p>
             }
           </div>
       }

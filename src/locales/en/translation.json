@@ -13,5 +13,6 @@
   "NUMBER OF DEATHS": "NUMBER OF DEATHS",
   "NUMBER OF RECOVERY CASES": "NUMBER OF RECOVERY CASES",
   "TotalConfirmed": "TotalConfirmed",
-  "TotalDeaths": "TotalDeaths"
+  "TotalDeaths": "TotalDeaths",
+  "Data not found": "Data not found"
 }
