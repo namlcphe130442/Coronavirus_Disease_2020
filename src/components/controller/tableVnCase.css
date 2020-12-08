@@ -1,0 +1,52 @@
+.timeline-detail {
+  background: none repeat scroll 0 0 #f5f5f5;
+  float: left;
+  position: relative;
+  width: 100%;
+  margin: 20px 0px;
+}
+
+.timeline-head {
+  background: none repeat scroll 0 0 #fafafa;
+  float: left;
+  width: 100%;
+}
+
+.timeline-content {
+  float: left;
+  padding: 15px 20px;
+  width: 100%;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.timeline-head>h3 {
+  color: #95723f;
+  float: left;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: .3px;
+  line-height: 22px;
+  margin: 0;
+  padding: 9px 0 9px 20px;
+}
+.container{
+  padding: 0 100px;
+}
+
+.tableContainer{
+  padding: 0 100px;
+}
+
+@media (max-width: 680px) {
+  .container{
+    padding: 0;
+  }
+  .tableContainer{
+    padding: 0;
+  }
+}
